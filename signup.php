@@ -10,11 +10,11 @@
     $check = mysqli_num_rows($check_data);
 
     if($check > 0){
-        header("Location:http://localhost/facebookclone");
+        header("Location:http://localhost/Facebooklogin");
     }else{
         $input = mysqli_query($con,"INSERT INTO userdata (id,firstname,lastname,phoneoremail,password)VALUES('$id','$firstname','$lastname','$phoneoremail','$password')");
         if($input){
-            header("Location:http://localhost/facebookclone/mainpage.html");
+            header("Location:http://localhost/Facebooklogin/mainpage.html");
         }
     }
 
