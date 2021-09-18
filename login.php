@@ -7,9 +7,9 @@
     $check = mysqli_num_rows($check_data);
 
     if($check > 0){
-        header("Location:http://localhost/facebookclone/mainpage.html");
+        header("Location:http://localhost/Facebooklogin/mainpage.html");
     }else{
-        header("Location:http://localhost/facebookclone");
+        header("Location:http://localhost/Facebooklogin");
     }
 
 ?>
